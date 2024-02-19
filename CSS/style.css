@@ -2,7 +2,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .hero {
-  max-width: 80%;
+  max-width: 90%;
   margin: 80px auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/Turtle_Group_1.jpeg");
@@ -42,4 +42,103 @@ body {
   border: 1px solid #fff;
   border-radius: 10px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.quoteOfMonth {
+  margin: 20px auto;
+  text-align: center;
+  padding: 30px 0;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.quoteOfMonth p {
+  font-size: 33px;
+  font-style: italic;
+}
+.section {
+  max-width: 80%;
+  margin: 80px auto;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: rgb(6, 79, 6);
+  border-radius: 10px;
+  color: #fff;
+}
+.section h2 {
+  font-size: 44px;
+  line-height: 1.5px;
+  letter-spacing: 3px;
+}
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px 10px;
+}
+.grid-item {
+  background-color: #fff;
+  border-radius: 10px;
+  color: rgb(6, 79, 6);
+  padding: 20px 15px;
+  transition: all 150ms ease-in-out;
+}
+.grid-item:hover {
+  transform: scale(1.1);
+}
+.section h3 {
+  font-size: 22px;
+  line-height: 1.5px;
+  letter-spacing: 2px;
+}
+.section p {
+  font-size: 14px;
+}
+.section ul {
+  list-style-type: none;
+  margin: 10px auto;
+  padding: 10px 10px;
+  font-size: 15px;
+}
+.section .grid-image {
+  width: 200px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 56px;
+  }
+  .section h2 {
+    font-size: 36px;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+  .grid-item:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  .section h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .section h2 {
+    font-size: 20px;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+  .grid-item:hover {
+    transform: scale(1.05);
+  }
 }

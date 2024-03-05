@@ -15,7 +15,7 @@ body {
 .hero h1 {
   color: #fff;
   font-size: 76px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 5px;
   text-align: center;
   padding-top: 60px;
@@ -26,15 +26,16 @@ body {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 3px;
+  overflow-wrap: normal;
 }
 
 .hero a {
   color: #fff;
   text-align: center;
   margin: 60px auto;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 3px;
   text-decoration: none;
   padding: 15px 10px;
@@ -67,7 +68,7 @@ body {
 }
 .section h2 {
   font-size: 44px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 3px;
 }
 .grid-3-columns {
@@ -87,12 +88,12 @@ body {
   transform: scale(1.1);
 }
 .section h3 {
-  font-size: 22px;
-  line-height: 1.5px;
+  font-size: 32px;
+  line-height: 1.5;
   letter-spacing: 2px;
 }
 .section p {
-  font-size: 14px;
+  font-size: 18px;
 }
 .section ul {
   list-style-type: none;
@@ -117,49 +118,21 @@ footer a {
   text-decoration: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
+  .hero {
+    max-width: 98%;
+  }
   .hero h1 {
     font-size: 56px;
   }
   .section h2 {
     font-size: 36px;
   }
-  .grid-3-columns {
-    grid-template-columns: 1fr;
-  }
-  .grid-item:hover {
-    transform: scale(1.05);
-  }
-}
-
-@media (max-width: 900px) {
-  .hero h1 {
-    font-size: 36px;
-  }
-  .section h2 {
-    font-size: 26px;
-  }
-}
-@media (max-width: 700px) {
-  .hero {
-    max-width: 98%;
-  }
-  .hero h1 {
-    font-size: 22px;
-  }
-  .hero h2 {
-    font-size: 18px;
-  }
   .section {
     max-width: 95%;
     padding: 10px 5px;
   }
-  .section h2 {
-    font-size: 15px;
-  }
-  .section h3 {
-    font-size: 18px;
-  }
+
   .grid-3-columns {
     grid-template-columns: 1fr;
   }
